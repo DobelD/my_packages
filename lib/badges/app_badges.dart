@@ -41,7 +41,7 @@ class AppBadges extends StatelessWidget {
           borderRadius: BorderRadius.circular(4.r),
           border: Border.all(color: borderColor)),
       child: Center(
-        child: Text('---',
+        child: Text('$text',
             style: GoogleFonts.inter(
               fontWeight: FontWeight.w400,
               color: borderColor,
