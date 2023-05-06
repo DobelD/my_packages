@@ -44,7 +44,7 @@ class AppBadges extends StatelessWidget {
         child: Text('$text',
             style: GoogleFonts.inter(
               fontWeight: FontWeight.w400,
-              color: bgColor,
+              color: borderColor,
               fontSize: 10.sp,
             )),
       ),
