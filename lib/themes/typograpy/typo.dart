@@ -10,12 +10,12 @@ class AppTextTheme {
   // ignore: unused_field
   final BuildContext _localContext;
 
-  static late AppTextTheme _current;
+  static AppTextTheme? _current;
 
-  static AppTextTheme get current => _current;
+  static AppTextTheme get current => _current!;
 
   static void init(BuildContext context) {
-    AppTextTheme._current;
+    AppTextTheme._current ??= AppTextTheme(context);
   }
 
   TextStyle get heroLabel => GoogleFonts.inter(
