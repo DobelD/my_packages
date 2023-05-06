@@ -23,6 +23,7 @@ class AppForm extends StatefulWidget {
       this.onSaved,
       this.textValidation,
       this.passConfirm = false,
+      this.isEmail = false,
       this.firstPassword,
       this.onChange})
       : minLines = 1,
@@ -50,6 +51,7 @@ class AppForm extends StatefulWidget {
       this.onSaved,
       this.textValidation,
       this.passConfirm = false,
+      this.isEmail = false,
       this.firstPassword,
       this.onChange})
       : minLines = 1,
@@ -80,6 +82,7 @@ class AppForm extends StatefulWidget {
   final bool passConfirm;
   final String? firstPassword;
   final ValueChanged<String>? onChange;
+  final bool isEmail;
 
   @override
   State<AppForm> createState() => _AppFormState();
@@ -135,26 +138,29 @@ class _AppFormState extends State<AppForm> {
             cursorColor: kPrimary1,
             keyboardType: widget.keyboardType,
             obscureText: isObscureText,
-            validator: (String? value) {
-              bool emailValid =
-                  RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value!);
-              if (value.isEmpty) {
-                return '${widget.labelText} wajib diisi';
-              } else if (widget.isTypePassword
-                  ? value.length <= 5
-                  : !emailValid) {
-                return widget.isTypePassword
-                    ? "Masukkan ${widget.labelText} minimal 6 karakter "
-                    : widget.labelText == "Email"
-                        ? "Format ${widget.labelText} tidak valid"
-                        : null;
-              } else if (widget.passConfirm == true &&
-                  widget.isTypePassword == true &&
-                  value != widget.firstPassword) {
-                return "Password tidak sama";
-              }
-              return null;
-            },
+            validator: widget.isEmail
+                ? (String? value) {
+                    bool emailValid =
+                        RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
+                            .hasMatch(value!);
+                    if (value.isEmpty) {
+                      return '${widget.labelText} wajib diisi';
+                    } else if (widget.isTypePassword
+                        ? value.length <= 5
+                        : !emailValid) {
+                      return widget.isTypePassword
+                          ? "Masukkan ${widget.labelText} minimal 6 karakter "
+                          : widget.labelText == "Email"
+                              ? "Format ${widget.labelText} tidak valid"
+                              : null;
+                    } else if (widget.passConfirm == true &&
+                        widget.isTypePassword == true &&
+                        value != widget.firstPassword) {
+                      return "Password tidak sama";
+                    }
+                    return null;
+                  }
+                : null,
             onSaved: widget.onSaved,
             onChanged: widget.onChange,
             style: AppTextTheme.current.textForm,

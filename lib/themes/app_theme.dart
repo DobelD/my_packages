@@ -7,7 +7,7 @@ class AppTheme {
         useMaterial3: false,
         scaffoldBackgroundColor: kMainBackground,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        colorScheme: ColorScheme(
+        colorScheme: const ColorScheme(
           brightness: Brightness.light,
           primary: kMain,
           onPrimary: kMain,

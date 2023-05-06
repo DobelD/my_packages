@@ -12,3 +12,8 @@ export './dropdown/app_dropdown.dart';
 export './error/login_error.dart';
 export './forms/app_form.dart';
 export './forms/text_area.dart';
+export './themes/app_theme.dart';
+export './themes/colors/colors.dart';
+export './themes/decoration/app_padding.dart';
+export './themes/decoration/app_radius.dart';
+export './themes/typograpy/typo.dart';
