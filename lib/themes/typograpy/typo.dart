@@ -10,11 +10,13 @@ class AppTextTheme {
   // ignore: unused_field
   final BuildContext _localContext;
 
-  static AppTextTheme? current;
+  static late AppTextTheme _current;
 
-  // static void init(BuildContext context) {
-  //   AppTextTheme.current ??= AppTextTheme(context);
-  // }
+  static AppTextTheme get current => _current;
+
+  static void init(BuildContext context) {
+    AppTextTheme._current;
+  }
 
   TextStyle get heroLabel => GoogleFonts.inter(
       fontWeight: FontWeight.bold, color: kDarkText, fontSize: 18.sp);
