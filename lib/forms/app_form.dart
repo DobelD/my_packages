@@ -126,7 +126,7 @@ class _AppFormState extends State<AppForm> {
       children: [
         Text(
           '${widget.labelText}',
-          style: AppTextTheme.current.labelForm,
+          style: AppTextTheme.current?.labelForm,
         ),
         SizedBox(height: 4.w),
         SizedBox(
@@ -163,14 +163,14 @@ class _AppFormState extends State<AppForm> {
                 : null,
             onSaved: widget.onSaved,
             onChanged: widget.onChange,
-            style: AppTextTheme.current.textForm,
+            style: AppTextTheme.current?.textForm,
             decoration: InputDecoration(
               isDense: true,
               filled: true,
               fillColor: widget.enabled ? kWhite : kSofterGrey,
               hintText: widget.hintText,
-              hintStyle: AppTextTheme.current.hintForm,
-              errorStyle: AppTextTheme.current.errorText,
+              hintStyle: AppTextTheme.current?.hintForm,
+              errorStyle: AppTextTheme.current?.errorText,
               errorText: widget.errText,
               contentPadding:
                   EdgeInsets.symmetric(horizontal: 8.w, vertical: 12.w),

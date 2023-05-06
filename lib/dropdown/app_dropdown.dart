@@ -29,7 +29,7 @@ class AppDropdown<T extends Object> extends StatelessWidget {
         child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('$label', style: AppTextTheme.current.labelForm),
+        Text('$label', style: AppTextTheme.current?.labelForm),
         SizedBox(height: 8.h),
         Container(
             height: 36.h,
@@ -48,7 +48,7 @@ class AppDropdown<T extends Object> extends StatelessWidget {
                   value: value,
                   hint: Text(
                     "$hint...",
-                    style: AppTextTheme.current.hintForm,
+                    style: AppTextTheme.current?.hintForm,
                   ),
                   icon: SvgPicture.asset(
                     'assets/svg/chevron-down.svg',

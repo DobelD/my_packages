@@ -91,10 +91,10 @@ class AppButton extends StatelessWidget {
                   Text(
                     '$text',
                     style: isSecond == false
-                        ? AppTextTheme.current.buttonText
+                        ? AppTextTheme.current?.buttonText
                         : onPressed != null
-                            ? AppTextTheme.current.buttonTextDark
-                            : AppTextTheme.current.buttonText,
+                            ? AppTextTheme.current?.buttonTextDark
+                            : AppTextTheme.current?.buttonText,
                   ),
                 ],
               ),

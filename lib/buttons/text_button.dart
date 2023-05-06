@@ -14,7 +14,7 @@ class AppTextButton extends StatelessWidget {
       onTap: onTap,
       child: Text(
         '$text',
-        style: AppTextTheme.current.textButton,
+        style: AppTextTheme.current?.textButton,
       ),
     );
   }

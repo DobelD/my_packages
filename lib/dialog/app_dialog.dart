@@ -33,11 +33,11 @@ class AppDialog extends StatelessWidget {
             child: Column(
               children: [
                 Text('Status $title',
-                    style: AppTextTheme.current.appbarTextLight),
+                    style: AppTextTheme.current?.appbarTextLight),
                 SizedBox(height: 16.w),
                 Text('',
                     textAlign: TextAlign.center,
-                    style: AppTextTheme.current.title1),
+                    style: AppTextTheme.current?.title1),
                 SizedBox(height: 24.w),
                 SizedBox(
                     height: 38.h,
@@ -50,7 +50,7 @@ class AppDialog extends StatelessWidget {
                                 borderRadius: AppRadius.middleAll)),
                         child: Text(
                           '$textButton',
-                          style: AppTextTheme.current.buttonText,
+                          style: AppTextTheme.current?.buttonText,
                         )))
               ],
             ),
