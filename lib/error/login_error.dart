@@ -28,13 +28,13 @@ class LoginErrorDialog extends StatelessWidget {
                     alignment: Alignment.center,
                     child: Text(
                       'Login Gagal',
-                      style: AppTextTheme.current?.title2,
+                      style: AppTextTheme.current.title2,
                     ),
                   ),
                   SizedBox(height: 16.h),
                   Text(
                     'Email atau Password anda salah',
-                    style: AppTextTheme.current?.title1,
+                    style: AppTextTheme.current.title1,
                   ),
                   SizedBox(height: 24.h),
                   // Align(

@@ -115,7 +115,7 @@ class FooterButton extends StatelessWidget {
                                           '$textButton',
                                           overflow: TextOverflow.ellipsis,
                                           style:
-                                              AppTextTheme.current?.buttonText,
+                                              AppTextTheme.current.buttonText,
                                         ),
                                       )
                                     : Expanded(
@@ -123,8 +123,8 @@ class FooterButton extends StatelessWidget {
                                           child: Text(
                                             '$textButton',
                                             overflow: TextOverflow.ellipsis,
-                                            style: AppTextTheme
-                                                .current?.buttonText,
+                                            style:
+                                                AppTextTheme.current.buttonText,
                                           ),
                                         ),
                                       )
@@ -138,7 +138,7 @@ class FooterButton extends StatelessWidget {
                                 Text(
                                   '$textButton',
                                   overflow: TextOverflow.ellipsis,
-                                  style: AppTextTheme.current?.buttonText,
+                                  style: AppTextTheme.current.buttonText,
                                 ),
                               ],
                             ))),
@@ -174,8 +174,8 @@ class FooterButton extends StatelessWidget {
                                     '$textButton2',
                                     overflow: TextOverflow.ellipsis,
                                     style: onPressed2 != null
-                                        ? AppTextTheme.current?.buttonTextDark
-                                        : AppTextTheme.current?.hintText,
+                                        ? AppTextTheme.current.buttonTextDark
+                                        : AppTextTheme.current.hintText,
                                   ),
                                 )
                               ],

@@ -20,8 +20,8 @@ class TextArea extends StatelessWidget {
         Text.rich(
           TextSpan(
             children: [
-              TextSpan(text: title, style: AppTextTheme.current?.labelForm),
-              TextSpan(text: '*', style: AppTextTheme.current?.labelForm),
+              TextSpan(text: title, style: AppTextTheme.current.labelForm),
+              TextSpan(text: '*', style: AppTextTheme.current.labelForm),
             ],
           ),
         ),
@@ -30,7 +30,7 @@ class TextArea extends StatelessWidget {
           height: 100.h,
           child: TextFormField(
             controller: controller,
-            style: AppTextTheme.current?.textForm,
+            style: AppTextTheme.current.textForm,
             cursorColor: kPrimary1,
             minLines: 8,
             keyboardType: TextInputType.multiline,
@@ -39,7 +39,7 @@ class TextArea extends StatelessWidget {
                 filled: true,
                 fillColor: kWhite,
                 hintText: hint,
-                hintStyle: AppTextTheme.current?.hintText,
+                hintStyle: AppTextTheme.current.hintText,
                 contentPadding:
                     EdgeInsets.symmetric(horizontal: 16.w, vertical: 18.h),
                 border: OutlineInputBorder(

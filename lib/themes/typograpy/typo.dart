@@ -12,9 +12,9 @@ class AppTextTheme {
 
   static AppTextTheme? current;
 
-  static void init(BuildContext context) {
-    AppTextTheme.current ??= AppTextTheme(context);
-  }
+  // static void init(BuildContext context) {
+  //   AppTextTheme.current ??= AppTextTheme(context);
+  // }
 
   TextStyle get heroLabel => GoogleFonts.inter(
       fontWeight: FontWeight.bold, color: kDarkText, fontSize: 18.sp);
