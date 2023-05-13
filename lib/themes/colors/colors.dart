@@ -17,12 +17,12 @@ const kWhite = Color(0xFFFFFFFF);
 const kRed = Color(0xFFE13C40);
 const kSoftRed = Color(0xFFF7CACB);
 
-const kPrimary1 = Color(0xFF2684FF);
+const kPrimary1 = Color(0xFF1363DF);
 const kPrimary2 = Color(0xFF64A7FF);
 const kPrimary3 = Color(0xFFBAD8FF);
 const kPrimary4 = Color(0xFFF3F8FF);
 
-const kSecondary1 = Color(0xFFF34A23);
+const kSecondary1 = Color(0xFF1363DF);
 const kSecondary2 = Color(0xFFFF937A);
 const kSecondary3 = Color(0xFFFFD7CE);
 const kSecondary4 = Color(0xFFFFF3F0);

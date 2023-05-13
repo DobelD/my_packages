@@ -1,19 +1,20 @@
-name: my_packages
+name: my_packages_pack
 version: 0.0.1
 homepage: https://www.instagram.com/code.r17
-description: A new Flutter package project.
+description: Fun project my package.
 repository: https://github.com/DobelD/my_packages.git
 environment: 
   sdk: '>=2.19.6 <3.0.0'
   flutter: '>=1.17.0'
 
 dependencies: 
-  flutter_screenutil: 5.7.0
-  flutter_svg: 2.0.5
-  google_fonts: 4.0.4
-  equatable: 2.0.5
+
+  flutter_svg: ^2.0.5
+  google_fonts: ^4.0.4
+  equatable: ^2.0.5
   flutter: 
     sdk: flutter
+  flutter_screenutil: ^5.7.0
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
